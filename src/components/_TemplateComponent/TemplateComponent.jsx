@@ -22,6 +22,7 @@ function TemplateFunction(props) {
         dispatch({
         // TODO: STEP 1 - We want to render some information on the DOM that is in our databse using this component. Create a type that will trigger a Saga. Go to _template.saga.js.
             type: 'This_Should_Match_Between_The_Component_And_Saga',
+        // For this particular example, you can disregard this payload. You want to send a payload of id typically when you're trying to get specific information.
             payload: id
         })
     }, [])
