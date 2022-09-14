@@ -70,4 +70,8 @@ router.get('/:id', (req, res) => {
 
 });
 
+router.get('/something', (req, res) => {
+  // ? What does '/something' mean? This is just a way to divert more traffic.
+}) 
+
 module.exports = router;
