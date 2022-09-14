@@ -25,12 +25,12 @@ function* functionThatRunsWhenThisYieldIsActivated(action) {
         yield axios.delete('/This_Should_Match_Between_The_Saga_And_Server/${action.payload}')
         */
 
-        console.log('This is what you are sending to this SAGA: ACTION.PAYLOAD=', action.payload)
+        console.log('This is what you are sending to this SAGA: ACTION.PAYLOAD =', action.payload)
 
         // TODO: STEP 8 - Now we want to be able to use that information that we GOT anywhere in our app. So we dispatch it to a reducer. 
         yield put({
         // TODO: STEP 9 - Again, we dispatch with a Type that triggers the reducer we want to hold our data. The data being the data we got back from the GET request on st_ep 3. (when you use the magnifying glass to look up that word, I didn't want this instance to show heheheh)
-            type: 'THIS_WILL_TRIGGER_A_REDUCER',
+            type: 'This_Should_Match_Match_Between_The_Saga_And_Reducer',
         // TODO: STEP 10 - Now go to the reducer with the matching type. In this case it's the _template.reducer file in the redux -> reducers folder.
             payload: response.data
         })
