@@ -20,7 +20,7 @@ function TemplateFunction(props) {
     const [id, setID] = useState();
     useEffect(() => {
         dispatch({
-        // TODO: STEP 1 - We want to render some information that's in our DOM in this component. Create a type that will trigger a Saga. Go to _template.saga.js.
+        // TODO: STEP 1 - We want to render some information that is in our DOM in this component. Create a type that will trigger a Saga. Go to _template.saga.js.
             type: 'This_Should_Match_Between_The_Component_And_Saga',
             payload: id
         })
